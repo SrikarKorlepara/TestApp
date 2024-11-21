@@ -1,0 +1,64 @@
+application {
+  config {
+    baseName ecommerceApp
+    applicationType monolith
+    packageName com.myapp.ecommerce
+    authenticationType jwt
+    prodDatabaseType mysql
+    clientFramework react
+    enableSwaggerCodegen true
+    languages [en]
+    testFrameworks [junit]
+  }
+  entities Product, Category, Customer, Order, OrderItem
+}
+
+entity Product {
+  name String required,
+  description String,
+  price BigDecimal required,
+  quantity Integer required
+}
+
+entity Category {
+  name String required
+}
+
+entity Customer {
+  firstName String required,
+  lastName String required,
+  email String required,
+  phoneNumber String
+}
+
+entity Order {
+  orderDate Instant required,
+  status String required,
+  totalAmount BigDecimal required
+}
+
+entity OrderItem {
+  quantity Integer required,
+  totalPrice BigDecimal required
+}
+
+relationship ManyToOne {
+  Product to Category
+}
+
+relationship OneToMany {
+  Customer to Order,
+  Order to OrderItem
+}
+
+relationship ManyToOne {
+  OrderItem to Product
+}
+
+relationship OneToOne {
+  Customer to User with builtInEntity  // Specify that User is a built-in entity
+}
+
+dto * with mapstruct
+service * with serviceImpl
+paginate Product, Category, Customer, Order, OrderItem with pagination

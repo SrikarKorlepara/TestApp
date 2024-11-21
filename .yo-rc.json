@@ -1,0 +1,21 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 0,
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "ecommerceApp",
+    "clientFramework": "react",
+    "devServerPort": 9060,
+    "enableSwaggerCodegen": true,
+    "entities": ["Product", "Category", "Customer", "Order", "OrderItem"],
+    "jhipsterVersion": "8.4.0",
+    "jwtSecretKey": "NmM4NWJlMzhjZjk5Yzg2MWE0NjAyYjUwM2QxNzA0ZjVkMDYxNzEwMDc1ZGIwZDM1MDQyMmY2ZDc5ZjJhYTMxY2FlNWMzNzZlYTZiODY4MjZhMjRmNTg2Y2U1NjFlMWY3MDc0MzY0NjhhODc5OThkMzkxNmFmZTcyOGY3ZWQ5ODQ=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1732202627000,
+    "nativeLanguage": "en",
+    "packageFolder": "com/myapp/ecommerce",
+    "packageName": "com.myapp.ecommerce",
+    "prodDatabaseType": "mysql",
+    "testFrameworks": ["junit"]
+  }
+}
