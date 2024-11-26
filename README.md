@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+
 # ecommerceApp
 
 This application was generated using JHipster 8.4.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v8.4.0](https://www.jhipster.tech/documentation-archive/v8.4.0).
@@ -251,4 +253,11 @@ To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`)
 [DefinitelyTyped]: https://definitelytyped.org/
 [OpenAPI-Generator]: https://openapi-generator.tech
 [Swagger-Editor]: https://editor.swagger.io
-[Doing API-First development]: https://www.jhipster.tech/documentation-archive/v8.4.0/doing-api-first-development/
+
+# [Doing API-First development]: https://www.jhipster.tech/documentation-archive/v8.4.0/doing-api-first-development/
+
+# TestApp
+
+Test app of ecommerce app using jhipster
+
+> > > > > > > 86811cd1ed746bc02c455883393fd5121d47cff0
