@@ -32,8 +32,11 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://localhost:3306/ecommerceApp?useUnicode=true&characterEncoding=utf8&useSSL=false&&allowPublicKeyRetrieval=true&useLegacyDatetimeCode=false&createDatabaseIfNotExist=true
-    username: root
+    url: jdbc:mysql://ecommerceapplication.c30yeu2g0p9w.ap-southeast-2.rds.amazonaws.com:3306/ecommerceapplication?useSSL=false&allowPublicKeyRetrieval=true
+    #    url: jdbc:mysql://localhost:3306/ecommerceApp?useUnicode=true&characterEncoding=utf8&useSSL=false&&allowPublicKeyRetrieval=true&useLegacyDatetimeCode=false&createDatabaseIfNotExist=true
+    #    username: root
+    #    password: 1620srikar
+    username: srikarkv
     password: 1620srikar
     hikari:
       poolName: Hikari
